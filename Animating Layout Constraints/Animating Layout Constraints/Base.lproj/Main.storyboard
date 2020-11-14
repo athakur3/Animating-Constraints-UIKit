@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animating_Layout_Constraints" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMQ-ty-Ida" customClass="BallView" customModule="Animating_Layout_Constraints" customModuleProvider="target">
+                                <rect key="frame" x="145" y="386" width="124" height="124"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6Y-lc-WWL">
+                                        <rect key="frame" x="47" y="47" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="BSN-yS-sKf"/>
+                                            <constraint firstAttribute="width" constant="30" id="h1f-a5-3Ne"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-cS-80b">
+                                        <rect key="frame" x="83.5" y="51" width="19.5" height="22"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="chevron.forward.square.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTN-Y2-5VL">
+                                        <rect key="frame" x="52.5" y="82" width="19" height="22"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="chevron.down.square.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afx-LC-1nP">
+                                        <rect key="frame" x="21" y="51" width="19.5" height="22"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="chevron.backward.square.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rv-PW-6ht">
+                                        <rect key="frame" x="52" y="20" width="20" height="22"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="chevron.up.square.fill" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89017016267123283" green="0.6505511558219178" blue="0.2068172089041096" alpha="0.54569777397260277" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="R7g-cS-80b" firstAttribute="centerX" secondItem="cMQ-ty-Ida" secondAttribute="centerX" multiplier="1.5" id="3Uc-yD-GcH"/>
+                                    <constraint firstItem="0Rv-PW-6ht" firstAttribute="centerX" secondItem="cMQ-ty-Ida" secondAttribute="centerX" id="EvM-0r-LE8"/>
+                                    <constraint firstItem="Afx-LC-1nP" firstAttribute="centerY" secondItem="cMQ-ty-Ida" secondAttribute="centerY" id="JLy-hN-Apw"/>
+                                    <constraint firstItem="R7g-cS-80b" firstAttribute="centerY" secondItem="cMQ-ty-Ida" secondAttribute="centerY" id="LjI-0m-pQA"/>
+                                    <constraint firstItem="YTN-Y2-5VL" firstAttribute="centerX" secondItem="cMQ-ty-Ida" secondAttribute="centerX" id="NDH-Ms-Y2M"/>
+                                    <constraint firstItem="YTN-Y2-5VL" firstAttribute="centerY" secondItem="cMQ-ty-Ida" secondAttribute="centerY" multiplier="1.5" id="Soc-62-C5r"/>
+                                    <constraint firstItem="I6Y-lc-WWL" firstAttribute="centerX" secondItem="cMQ-ty-Ida" secondAttribute="centerX" id="Tlw-hA-DOh"/>
+                                    <constraint firstItem="I6Y-lc-WWL" firstAttribute="centerY" secondItem="cMQ-ty-Ida" secondAttribute="centerY" id="VWn-rP-t9F"/>
+                                    <constraint firstItem="Afx-LC-1nP" firstAttribute="centerX" secondItem="cMQ-ty-Ida" secondAttribute="centerX" multiplier="0.5" id="pfu-dy-awD"/>
+                                    <constraint firstItem="0Rv-PW-6ht" firstAttribute="centerY" secondItem="cMQ-ty-Ida" secondAttribute="centerY" multiplier="0.5" id="xrX-6g-ziG"/>
+                                    <constraint firstAttribute="width" secondItem="cMQ-ty-Ida" secondAttribute="height" multiplier="1:1" id="yHx-KY-dRw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="ball" destination="I6Y-lc-WWL" id="Rex-Xk-qGE"/>
+                                    <outlet property="bottomKey" destination="YTN-Y2-5VL" id="USJ-1U-mOK"/>
+                                    <outlet property="horizontalConstraint" destination="AhQ-cQ-JWh" id="Yxy-Hq-tiL"/>
+                                    <outlet property="leftKey" destination="Afx-LC-1nP" id="ErS-Gr-msu"/>
+                                    <outlet property="rightKey" destination="R7g-cS-80b" id="z0g-DT-6Dq"/>
+                                    <outlet property="upKey" destination="0Rv-PW-6ht" id="taI-eo-N4M"/>
+                                    <outlet property="verticalConstraint" destination="oju-Iv-yIm" id="kH4-GU-iRW"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cMQ-ty-Ida" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AhQ-cQ-JWh"/>
+                            <constraint firstItem="cMQ-ty-Ida" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="Shl-u7-5h3"/>
+                            <constraint firstItem="cMQ-ty-Ida" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oju-Iv-yIm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ballView" destination="cMQ-ty-Ida" id="3hq-fH-gut"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288.40579710144931" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward.square.fill" catalog="system" width="128" height="114"/>
+        <image name="chevron.down.square.fill" catalog="system" width="128" height="114"/>
+        <image name="chevron.forward.square.fill" catalog="system" width="128" height="114"/>
+        <image name="chevron.up.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
